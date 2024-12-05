@@ -44,23 +44,21 @@ just run
 
 ```ps1
 javac src/main/java/xyz/whinyaan/dcit50/lab4/*.java -Xdiags:verbose
-java -cp src/main/java xyz.whinyaan.dcit50.lab4.App
+java -cp src/main/java xyz.whinyaan.dcit50.lab4.ExpressionTester
 ```
 
 ### MacOS
 
 ```sh
-set -euo pipefail
 javac src/main/java/xyz/whinyaan/dcit50/lab4/*.java -Xdiags:verbose
-java -cp src/main/java xyz.whinyaan.dcit50.lab4.App
+java -cp src/main/java xyz.whinyaan.dcit50.lab4.ExpressionTester
 ```
 
 ### Linux
 
 ```sh
-set -euo pipefail
 javac src/main/java/xyz/whinyaan/dcit50/lab4/*.java -Xdiags:verbose
-java -Dawt.useSystemAAFontSettings=lcd_hrgb -Dswing.aatext=true -cp src/main/java xyz.whinyaan.dcit50.lab4.App # set antialiasing to true for smooth font rendering
+java -Dawt.useSystemAAFontSettings=lcd_hrgb -Dswing.aatext=true -cp src/main/java xyz.whinyaan.dcit50.lab4.ExpressionTester # set antialiasing to true for smooth font rendering
 ```
 
 <!-- License section. Leave unchanged except when changing the style altogether. -->
