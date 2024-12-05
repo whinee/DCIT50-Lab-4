@@ -13,6 +13,16 @@ class Negation extends UnaryOperation {
 
     @Override
     public String toString() {
-        return "-" + getOperand().toString();
+        String operandStr = getOperand().toString();
+        
+        // If the operand is already a negation, avoid redundant negation
+        if (getOperand() instanceof Negation) {
+            return operandStr;
+        // Else if the operand starts with the negative sign, remove it
+        } else if (operandStr.startsWith("-")) {
+            return operandStr.substring(1);
+        }
+        // Otherwise, prepend the negative sign
+        return "-" + operandStr;
     }
 }
