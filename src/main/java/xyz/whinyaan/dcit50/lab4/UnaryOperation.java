@@ -7,7 +7,7 @@ abstract class UnaryOperation extends Expression {
         this.operand = operand;
     }
 
-    protected Expression getOperand() {
+    final Expression getOperand() {
         return operand;
     }
 }

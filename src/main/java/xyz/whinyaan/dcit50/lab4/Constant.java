@@ -9,7 +9,7 @@ class Constant extends Expression {
     }
 
     @Override
-    Integer getValue() {
+    public Integer getValue() {
         return value;
     }
 

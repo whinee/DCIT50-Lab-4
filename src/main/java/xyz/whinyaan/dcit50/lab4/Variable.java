@@ -10,7 +10,8 @@ class Variable extends Expression {
     }
 
     public Variable(String name) {
-        this(name, null);
+        this.name = name;
+        this.value = null;
     }
 
     public String getName() {
@@ -22,7 +23,7 @@ class Variable extends Expression {
     }
 
     @Override
-    Integer getValue() {
+    public Integer getValue() {
         return value;
     }
 

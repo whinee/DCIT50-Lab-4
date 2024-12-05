@@ -6,7 +6,7 @@ class Negation extends UnaryOperation {
     }
 
     @Override
-    Integer getValue() {
+    public Integer getValue() {
         Integer operandValue = getOperand().getValue();
         return operandValue != null ? -operandValue : null;
     }

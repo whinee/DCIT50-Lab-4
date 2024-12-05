@@ -9,11 +9,11 @@ abstract class BinaryOperation extends Expression {
         this.rightOperand = rightOperand;
     }
 
-    protected Expression getLeftOperand() {
+    final Expression getLeftOperand() {
         return leftOperand;
     }
 
-    protected Expression getRightOperand() {
+    final Expression getRightOperand() {
         return rightOperand;
     }
 }
